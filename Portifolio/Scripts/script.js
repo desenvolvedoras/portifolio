@@ -1,1 +1,0 @@
-const botao = documento.getElementById("modoClaroEscuro");

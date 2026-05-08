@@ -144,3 +144,35 @@ function exibirPerfil() {
     resultadoQuiz.textContent = "🔄 Perfil Full Stack — você é dos dois!";
   }
 }
+for (let i = 0; i <= 20; i++){
+  let pares = (i % 2 === 0) ? "par" : "ímpar";
+  console.log(`${i} é ${pares}`);
+}
+let object={
+  nome: "Giovana",
+  idade: 18,
+  profissao: "Estudante"
+}
+for (let chave in object){
+  document.write(`<p>${chave}: ${object[chave]}</p>`);
+}
+let alunos = ["Ana", "Giovana", "Carla", "Daniel"];
+for (let contem of alunos){
+  document.write(`<p>${aluno}</p>`);
+  if (contem=== "Giovana"){
+    document.write('<p> ${contem}- Presente!</p>');
+  }
+  else{
+    document.write(`<p>${contem} - Ausente!</p>`);
+  }
+}
+
+
+let num= prompt("Prompt 1- Diga um número par:");
+while (num % 2 !== 0){  
+  num = prompt("Número inválido! Por favor, digite um número par:");
+};
+
+do{
+  num= prompt("Prompt 2- Diga um número par:"); 
+}while (num % 2 !== 0);

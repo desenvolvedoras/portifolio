@@ -156,23 +156,23 @@ let object={
 for (let chave in object){
   document.write(`<p>${chave}: ${object[chave]}</p>`);
 }
-let alunos = ["Ana", "Giovana", "Carla", "Daniel"];
-for (let contem of alunos){
-  document.write(`<p>${aluno}</p>`);
-  if (contem=== "Giovana"){
-    document.write('<p> ${contem}- Presente!</p>');
+let linguagens = ["C", "Python", "Java.script", "Css", "Html"];
+for (let contem of linguagens){
+  document.write(`<p>${linguagens}</p>`);
+  if (contem=== "Python"){
+    document.write('<p> ${contem}- É a linguagem que mais gosto!</p>');
   }
   else{
-    document.write(`<p>${contem} - Ausente!</p>`);
+    document.write(`<p>${contem} - Essas estou em processo de aprendizagem!</p>`);
   }
 }
 
 
-let num= prompt("Prompt 1- Diga um número par:");
+let num= prompt("Prompt 1- Tente adivinhar minha idade:");
 while (num % 2 !== 0){  
-  num = prompt("Número inválido! Por favor, digite um número par:");
+  num = prompt("Passou longe! O número é par, tente novamente:");
 };
 
 do{
   num= prompt("Prompt 2- Diga um número par:"); 
-}while (num % 2 !== 0);
+}while (num % 2 !== 0)

@@ -176,3 +176,33 @@ while (num % 2 !== 0){
 do{
   num= prompt("Prompt 2- Diga um número par:"); 
 }while (num % 2 !== 0)
+
+let projetos = [
+  {nome: "Aplicação de Estacionamento",
+  tecnologias: ["Python", "Tkinter", "fpdf"],
+  conhecimentos: ["Vscode", "Github", "PyInstaller", "pip"],
+  descricao:"Aplicação desktop para controle de estacionamento, com geração de recibos em PDF e interface gráfica."
+  },
+  {nome: "Portfólio Pessoal",
+  tecnologias: ["JavaScript", "Html", "Css","Github"],
+  conhecimentos: ["Vscode", "Github"],
+  descricao:"Site pessoal para apresentar minhas habilidades, projetos e experiências, utilizando HTML, CSS e JavaScript."}
+]
+console.log(projetos[0].nome);
+console.log(projetos[1].nome);
+console.log(projetos[0].tecnologias[0]);
+console.log(projetos[0].tecnologias[1]);
+console.log(projetos[0].tecnologias[2]);
+console.log(projetos[1].tecnologias[0]);
+console.log(projetos[1].tecnologias[1]);
+console.log(projetos[1].tecnologias[2]);
+console.log(projetos[0].conhecimentos[0]);
+console.log(projetos[0].conhecimentos[1]);
+console.log(projetos[0].conhecimentos[2]);
+console.log(projetos[0].conhecimentos[3]);
+console.log(projetos[1].conhecimentos[0]);
+console.log(projetos[1].conhecimentos[1]);
+console.log(projetos[0].descricao);
+console.log(projetos[1].descricao);
+
+document.createElement("h3").textContent = projetos[0].nome;
